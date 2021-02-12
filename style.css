@@ -5,6 +5,13 @@ body {
 .nav {
     padding-top: 20px;
     padding-left: 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.nav span {
+
 }
 
 .pinterest-logo {
@@ -14,27 +21,47 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
-    background-color: black;
     border-radius: 60px;
     padding: 15px;
+    border: none;
+    color: #666;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.05rem;
+    font-weight:700;
+}
+
+a:hover {
+    background-color: #ECECEC;
+}
+
+a.active {
+    background-color: black;
+    color: white;
 }
 
 input {
     border-radius: 60px;
-    background-color: black;
-    opacity: 0.1;
+    background-color: #ECECEC;
     padding: 15px;
     margin-left: 15px;
-    width: 1000px;
+    margin-right: 15px;
+    width: 950px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.05rem;
 }
 
-.nav li {
-    display: inline-flex;
-    flex-direction: row;
+input:hover {
+    background-color: #D4D4D4;
 }
-
 
 i {
     color: #666;
+    padding: 15px;
+}
+
+i:hover {
+    background-color: #ECECEC;
+    border-radius: 50%;
 }
