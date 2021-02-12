@@ -13,9 +13,9 @@ def request(url, token = nil)
 end 
 
 def build_web_page(info_array)
-    File.open('index.html', 'w') do |file|
+    File.open('images.html', 'w') do |file|
         info_array.each do |element|
-            file.puts "<img src='#{element["images"]["main"]}' alt='#{element["name"]["spanish"]}'>" 
+            file.puts "<img src='#{element["images"]["main"]}' alt='#{element["name"]["spanish"]}' class='image'>" 
         end
     end          
 end 
