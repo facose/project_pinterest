@@ -107,6 +107,7 @@ header {
     .fourth {
         width: 22%;
         text-align: end;
+        margin-left: auto;
     }
 
 
@@ -220,7 +221,7 @@ header {
     }
 
     .second {
-        width: 17%;
+        width: 20%;
     }
 
     .third {
@@ -232,12 +233,11 @@ header {
         width: 35%;
         text-align: end;
         border: none;
+        margin-left: auto;
     }
 
     .fifth {
-        width: 20%;
-        text-align: end;
-        margin-left: auto;
+        display: none;
     }
 
     .sixth, .seventh, .eighth  {
@@ -251,14 +251,28 @@ header {
     }  
 
     .gallery {
-        width: 95%;
+        max-width: 86%;
         column-count: 3;
-        padding-top: 81px;
-        margin-left: 2.5%;
+        padding-top: 85px;
+        margin-left: 7%;
     }
 }
 
 @media only screen and (min-width: 950px) {
+
+    nav {
+        width: 100%;
+        text-align: left;
+        padding: 15px 15px 15px 15px;
+    }
+
+    span .first, .second, .third, .fourth, .sixth, .seventh, .eighth, .nineth {
+        display: inline-block;
+    }
+
+    a {
+        padding: 15px 16px 15px 16px;
+    }
 
     a.active {
         background-color: black;
@@ -277,12 +291,22 @@ header {
         display: inline;
     }
 
+    .fa-pinterest {
+        padding: 11px;
+    }
+
     .fa-search {
         margin: 0;
         padding: 0;
         color: #666;
-        font-size: 20px;
-        position: fixed;
+        font-size: 16px;
+        position: static;
+        font-weight: 500;
+        z-index: 3;
+    }
+
+    .fa-bell, .fa-comment-dots, .fa-user-circle {
+        padding: 14px;
     }
 
     input {
@@ -290,6 +314,7 @@ header {
         border-radius: 60px;
         background-color: #ECECEC;
         padding: 15px 15px 15px 15px;
+        margin-left: 0;
         border: none;
         width: 100%;
         font-family: Helvetica, sans-serif;
@@ -300,49 +325,113 @@ header {
     }
 
     .first {
-        width: 4%;
+        width: 3%;
+        max-width: 3%;
+        margin-left: 0.2%;
+        margin-right: 1%;
     }
 
     .second {
-        width: 8%;
+        width: 3%;
+        max-width: 3%;
+        margin: 0;
+        text-align: left;
+        margin-left: 1%;
+        margin-right: 2.5%;
     }
 
     .third {
-        width: 8%;
+        width: 3%;
+        max-width: 3%;
+        margin: 0;
+        text-align: left;
+        margin-left: 2.5%;
+        margin-right: 4%;
     }
 
     .fourth {
         margin: 0;
+        margin-right: 0;
+        padding-right: 0;
+        width: 1%;
+        z-index: 3;
+        position: relative;
+        display: inline;
+        left: 7%;
     }
 
     .fifth {
-        width: 70%;
+        display: inline;
+        width: 85%;
+        min-width: 54.5%;
+        text-align: left;
+        border: none;
+        margin-left: 4%;
+        padding-left: 0;
     }
 
     .sixth, .seventh, .eighth {
-        width: 4%;
+        width: 3%;
+        margin-right: 2%;
     }
 
     .nineth {
-        width: 5%;
+        width: 2%;
     }
     
-    .gallery {
-        width: 95%;
+    /*.gallery {
+        width: 85%;
         column-count: 4;
         padding-top: 81px;
-        margin-left: 2.5%;
+        margin-left: 7.5%;
+    }*/
+    .gallery {
+        column-count: 4;
     }
    
 }    
 
+@media only screen and (min-width: 1050px) {
+
+}
+
 @media only screen and (min-width: 1200px) {
 
-    .gallery {
-        width: 95%;
-        column-count: 5;
-        padding-top: 81px;
-        margin-left: 2.5%;
+    .first {
+        margin: 0;
+        margin-right: 0.4%;
     }
 
+    .second, .third {
+        margin: 0;
+        margin-right: 2.3%;
+    }
+
+    /*.fifth {
+        width: 85%;
+    }*/
+    .fourth {
+        left: 4.2%;
+    }
+
+    .fifth {
+        margin-left: 2%;
+    }
+
+    .sixth, .seventh, .eighth {
+        margin-right: 0.3%;
+    }
+
+    .nineth {
+        margin-right: 1%;
+    }
+    /*.gallery {
+        width: 86%;
+        column-count: 5;
+        padding-top: 81px;
+        margin-left: 7%;
+    }*/
+    .gallery {
+        column-count: 5;
+    }
 }
