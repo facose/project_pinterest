@@ -31,5 +31,4 @@ window.onload = function() {
 };
 
 
-
 console.log(img_arry)

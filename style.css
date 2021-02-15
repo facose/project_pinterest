@@ -1,5 +1,6 @@
 html {
     overscroll-behavior: contain;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,9 +20,18 @@ span {
 }
 
 header {
-        width: 100%;
-        text-align: left;
-    }
+    width: 100%;
+    text-align: left;
+}
+
+.add:hover {
+    background-color: #ECECEC;
+}
+
+.question:hover {
+    background-color: #ECECEC;
+}
+  
 
 @media only screen and (min-width: 320px) {
     
@@ -143,6 +153,38 @@ header {
         z-index: 1;
         cursor: zoom-in;
     }
+
+    .add {
+        border: 0.5px solid #FAFAFA;
+        cursor: pointer;
+        position: fixed;
+        bottom: 4.1rem;
+        right: 1.2rem;
+        font-size: 14px;
+        color: #545454;
+        background-color: white;
+        border-radius: 50%;
+        font-weight: lighter;
+        padding: 0.7rem 0.8rem;
+        box-shadow: 0 -3px #ECECEC inset;
+        z-index: 3;
+    }
+    
+    .question {
+        border: 0.5px solid #FAFAFA;;
+        cursor: pointer;
+        position: fixed;
+        bottom: 1.1rem;
+        right: 1.2rem;
+        font-size: 14px;
+        color: #545454;
+        background-color: white;
+        border-radius: 50%;
+        font-weight: lighter;
+        padding: 0.7rem 0.8rem;
+        box-shadow: 0 -3px #ECECEC inset;
+        z-index: 3;
+    }
 }
 
 @media only screen and (min-width: 640px) {
@@ -168,18 +210,6 @@ header {
         background-color: #ECECEC;
         border-radius: 50%;
     }
-    
-    /*.fa-search {
-        font: 6px;
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        top: 0;
-        left: 60%;
-        color: #666;
-        font-weight: 500;
-        z-index: 3;
-    }*/
     
     .fa-bell, .fa-comment-dots, .fa-user-circle {
         color: #666;
@@ -255,6 +285,36 @@ header {
         column-count: 3;
         padding-top: 85px;
         margin-left: 7%;
+    }
+
+    .add {
+        border: 0.5px solid #FAFAFA;
+        cursor: pointer;
+        position: fixed;
+        bottom: 4rem;
+        right: 1.2rem;
+        font-size: 17px;
+        color: #545454;
+        background-color: white;
+        border-radius: 50%;
+        font-weight: lighter;
+        padding: 0.8rem 0.8rem;
+        box-shadow: 0 -3px #ECECEC inset;
+    }
+    
+    .question {
+        border: 0.5px solid #FAFAFA;;
+        cursor: pointer;
+        position: fixed;
+        bottom: 1rem;
+        right: 1.2rem;
+        font-size: 17px;
+        color: #545454;
+        background-color: white;
+        border-radius: 50%;
+        font-weight: lighter;
+        padding: 0.8rem 0.8rem;
+        box-shadow: 0 -3px #ECECEC inset;
     }
 }
 
