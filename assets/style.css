@@ -116,6 +116,10 @@ img {
     opacity: 0;
 }
 
+.top:hover, .bottom1:hover, .bottom2:hover {
+    cursor: pointer;
+}
+
 .fa-upload .a-ellipsis-h {
     font-size: 38px;
     color: gray;
