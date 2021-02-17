@@ -31,7 +31,51 @@ header {
 .question:hover {
     background-color: #ECECEC;
 }
-  
+
+.home {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.fa-chevron-2:hover {
+    cursor: pointer;
+}
+
+.menu {
+    padding: 0;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: white;
+    border: 0.5px solid lightgray;
+    border-radius: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu li {
+    margin: 0 4px;
+    padding: 10px 85px 10px 20px;
+    border-radius: 10px;
+}
+
+.menu li:hover {
+    background-color: #ECECEC;
+}
+
 
 @media only screen and (min-width: 320px) {
     
@@ -45,6 +89,33 @@ header {
         position: fixed;
         width: 100%;
         z-index: 3;
+    }
+    
+    .mobile-home {
+        padding: 0;
+        position: absolute;
+        top: 70px;
+        left: 25px;
+        background-color: white;
+        border: 0.5px solid lightgray;
+        border-radius: 20px;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    .mobile-home ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .mobile-home li {
+        margin: 0 4px;
+        padding: 10px 85px 10px 20px;
+        border-radius: 10px;
+    }
+    
+    .mobile-home li:hover {
+        background-color: #ECECEC;
     }
     
     .fa-pinterest {
@@ -64,25 +135,25 @@ header {
         padding: 12px;
         font-size: 24px;
     }
-
+    
     .fa-chevron-1 {
         color: #666;
         padding: 6px;
         font-size: 14px;
     }
-
+    
     .fa-chevron-2 {
         color: #666;
         padding: 6px;
         font-size: 14px;
     }
-
+    
     .fa-bell:hover, .fa-comment-dots:hover, .fa-user-circle:hover, .fa-chevron-2:hover, .fa-search:hover, .fa-pinterest:hover {
         background-color: #ECECEC;
         border-radius: 50%;
     }
     
-    a {
+    .home a, .following a, .alternate-home a {
         text-decoration: none;
         border-radius: 60px;
         padding: 12px;
@@ -93,11 +164,11 @@ header {
         font-size: 1rem;
         font-weight: bold;
     }
-
-    a:hover {
+    
+    .home a:hover, .following a:hover, .alternate-home a:hover {
         background-color: #ECECEC;
     }
-
+    
     .following {
         display: none;
     }
@@ -113,28 +184,32 @@ header {
     .first {
         width: 12%;
     }
-
+    
+    .second {
+        display: none;
+    }
+    
     .fourth {
         width: 22%;
         text-align: end;
         margin-left: auto;
     }
-
-
+    
+    
     .sixth, .seventh, .eighth  {
         width: 8%;
         text-align: end;
         margin-right: 1.5%;
     }
-
+    
     .sixth {
         margin-left: 1%;
     }
-
+    
     .nineth {
         margin-right: 2.0%;
     }
-
+    
     .gallery {
         width: 97.6%;
         column-count: 2;
@@ -153,7 +228,7 @@ header {
         z-index: 1;
         cursor: zoom-in;
     }
-
+    
     .add {
         border: 0.5px solid #FAFAFA;
         cursor: pointer;
@@ -188,7 +263,7 @@ header {
 }
 
 @media only screen and (min-width: 640px) {
-
+    
     nav {
         background-color: white;
         padding: 0 0 0 0;
@@ -198,6 +273,18 @@ header {
         position: fixed;
         width: 100%;
         z-index: 3;
+    }
+    
+    .mobile-home {
+        padding: 0;
+        position: absolute;
+        top: 70px;
+        left: 35px;
+        background-color: white;
+        border: 0.5px solid lightgray;
+        border-radius: 20px;
+        text-align: left;
+        font-weight: bold;
     }
     
     .fa-pinterest {
@@ -216,7 +303,7 @@ header {
         padding: 12px;
         font-size: 25px;
     }
-
+    
     .fa-chevron-2 {
         color: #666;
         padding: 6px;
@@ -224,7 +311,7 @@ header {
         margin-right: auto;
     }
     
-    a {
+    .home a, .following a, .alternate-home a {
         text-decoration: none;
         border-radius: 60px;
         padding: 13px;
@@ -235,7 +322,7 @@ header {
         font-size: 1rem;
         font-weight: bold;
     }
-
+    
     a:hover {
         background-color: #ECECEC;
     }
@@ -244,20 +331,20 @@ header {
         background-color: #ECECEC;
         border-radius: 50%;
     }
-
+    
     .first {
         width: 5%;
         margin-right: 2.4%;
     }
-
+    
     .second {
         width: 20%;
     }
-
+    
     .third {
         width: 8%;
     }
-
+    
     .fourth {
         padding: 0;
         width: 35%;
@@ -265,28 +352,28 @@ header {
         border: none;
         margin-left: auto;
     }
-
+    
     .fifth {
         display: none;
     }
-
+    
     .sixth, .seventh, .eighth  {
         width: 3.6%;
         text-align: end;
         margin-right: 2.7%;
     }
-
+    
     .nineth {
         width: 3.2%;
     }  
-
+    
     .gallery {
         max-width: 86%;
         column-count: 3;
         padding-top: 85px;
         margin-left: 7%;
     }
-
+    
     .add {
         border: 0.5px solid #FAFAFA;
         cursor: pointer;
@@ -319,42 +406,58 @@ header {
 }
 
 @media only screen and (min-width: 950px) {
-
+    
     nav {
         width: 100%;
         text-align: left;
         padding: 15px 15px 15px 15px;
     }
-
+    
+    .mobile-home {
+        display: none;
+    }
+    
+    .alternate-home {
+        display: none;
+    }
+    
     span .first, .second, .third, .fourth, .sixth, .seventh, .eighth, .nineth {
         display: inline-block;
     }
-
+    
     a {
+        text-decoration: none;
+        border-radius: 60px;
         padding: 15px 16px 15px 16px;
+        border: none;
+        color: black;
+        background-color: white;
+        font-family: Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
     }
-
-    a.active {
+    
+    a:focus {
         background-color: black;
         color: white;
     }
-
+    
     i {
         margin: 0;
     }
-
+    
     .second .fa-chevron-down {
         display: none;
     }
-
+    
     .following {
         display: inline;
     }
-
+    
     .fa-pinterest {
         padding: 11px;
     }
-
+    
     .fa-search {
         margin: 0;
         padding: 0;
@@ -364,11 +467,11 @@ header {
         font-weight: 500;
         z-index: 3;
     }
-
+    
     .fa-bell, .fa-comment-dots, .fa-user-circle {
         padding: 14px;
     }
-
+    
     input {
         display: inline;
         border-radius: 60px;
@@ -383,14 +486,14 @@ header {
         outline: none;
         z-index: 1;
     }
-
+    
     .first {
         width: 3%;
         max-width: 3%;
         margin-left: 0.2%;
         margin-right: 1%;
     }
-
+    
     .second {
         width: 3%;
         max-width: 3%;
@@ -399,7 +502,7 @@ header {
         margin-left: 1%;
         margin-right: 2.5%;
     }
-
+    
     .third {
         width: 3%;
         max-width: 3%;
@@ -408,7 +511,7 @@ header {
         margin-left: 2.5%;
         margin-right: 4%;
     }
-
+    
     .fourth {
         margin: 0;
         margin-right: 0;
@@ -419,7 +522,7 @@ header {
         display: inline;
         left: 7%;
     }
-
+    
     .fifth {
         display: inline;
         width: 85%;
@@ -429,12 +532,12 @@ header {
         margin-left: 4%;
         padding-left: 0;
     }
-
+    
     .sixth, .seventh, .eighth {
         width: 3%;
         margin-right: 2%;
     }
-
+    
     .nineth {
         width: 2%;
     }
@@ -448,40 +551,40 @@ header {
     .gallery {
         column-count: 4;
     }
-   
+    
 }    
 
 @media only screen and (min-width: 1050px) {
-
+    
 }
 
 @media only screen and (min-width: 1200px) {
-
+    
     .first {
         margin: 0;
         margin-right: 0.4%;
     }
-
+    
     .second, .third {
         margin: 0;
         margin-right: 2.3%;
     }
-
+    
     /*.fifth {
         width: 85%;
     }*/
     .fourth {
         left: 4.2%;
     }
-
+    
     .fifth {
         margin-left: 2%;
     }
-
+    
     .sixth, .seventh, .eighth {
         margin-right: 0.3%;
     }
-
+    
     .nineth {
         margin-right: 1%;
     }
